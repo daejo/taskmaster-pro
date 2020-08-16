@@ -168,16 +168,20 @@ $(".card .list-group").sortable({ //makes the list sortable and saves their posi
   tolerance: "pointer",
   helper: "clone",
   activate: function(event) {
-    console.log("activate", this);
+    console.log("activate",  $(this).addClass("dropover"));
+    $(".bottom-trash").addClass("bottom-trash-drag");
   },
   deactivate: function(event) {
-    console.log("deactivate", this);
+    console.log("deactivate", $(this).removeClass("dropover"));
+    $(".bottom-trash").removeClass("bottom-trash-drag");
   },
   over: function(event) {
-    console.log("over", event.target);
+    console.log("over", $(event.target).addClass("dropover-active"));
+    $(".bottom-trash").addClass("bottom-trash-drag");
   },
   out: function(event) {
-    console.log("out", event.target);
+    console.log("out", $(event.target).removeClass("dropover-active"));
+    $(".bottom-trash").removeClass("bottom-trash-drag");
   },
   update: function(event) {
   // array to store the task data in
@@ -246,7 +250,7 @@ $("#task-form-modal").on("shown.bs.modal", function() {
 });
 
 // save button in modal was clicked
-$("#task-form-modal .btn-primary").click(function() {
+$("#task-form-modal .btn-save").click(function() {
   // get form values
   var taskText = $("#modalTaskDescription").val();
   var taskDate = $("#modalDueDate").val();
@@ -278,5 +282,12 @@ $("#remove-tasks").on("click", function() {
 
 // load tasks for the first time
 loadTasks();
+
+setInterval(function () {
+  $(".card .list-group-item").each(function (el) {
+    auditTask(el);
+    console.log(taskEl)
+  });
+}, (1000 * 60) * 30);
 
 
