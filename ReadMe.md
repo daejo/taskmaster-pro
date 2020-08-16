@@ -1,4 +1,4 @@
-# David Joaquin's Code Quiz
+# Taskmaster Pro
 
 ## Purpose
 A website where you can test your skills on JavaScript fundamentals. A timed quiz that guages your knowledge regarding JavaScript. See how you have improved personally and how well you stack against your peers.
@@ -12,7 +12,7 @@ A website where you can test your skills on JavaScript fundamentals. A timed qui
 
 
 ## Website
-https://daejo.github.io/code-quiz/
+https://daejo.github.io/taskmaster-pro/
 
 ## Contribution
 Created by David Joaquin
