@@ -30,8 +30,8 @@ h6 {
   font-family: "Staatliches", sans-serif;
   transform: translateY(150px);
   transition: all .5s ease-in-out;
-  background-color: rgba(234,0,39,0.7);
-};
+  background-color: rgba(234,0,39.0.7);
+}
 
 .bottom-trash-drag {
   transform: translateY(0);

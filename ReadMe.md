@@ -1,7 +1,7 @@
 # Taskmaster Pro
 
 ## Purpose
-A website where you can test your skills on JavaScript fundamentals. A timed quiz that guages your knowledge regarding JavaScript. See how you have improved personally and how well you stack against your peers.
+
 
 ![Screenshot](./assets/images/screenshot.png)
 
