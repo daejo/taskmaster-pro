@@ -1,4 +1,7 @@
 # Taskmaster Pro
+ ![Top Language](https://img.shields.io/github/languages/top/daejo/taskmaster-pro)
+  ![GitHub Language count](https://img.shields.io/github/languages/count/daejo/taskmaster-pro)
+  ![License](https://img.shields.io/badge/license-MIT_License-pink.svg)
 
 ## Purpose
 
